@@ -24,6 +24,19 @@
       box-shadow:0 4px 20px rgba(0,0,0,0.08);
     }
 
+    .header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+    }
+
+    .header img{
+      width:70px;
+      height:70px;
+      object-fit:contain;
+    }
+    
     h1{
       color:#2563eb;
       margin-bottom:10px;
@@ -63,7 +76,10 @@
 
 <div class="container">
 
-  <h1>RememberTo</h1>
+  <div class="header">
+    <h1>RememberTo</h1>
+    <img src="logo.png" alt="RememberTo Logo">
+  </div>
 
   <p>
     Applicazione per la gestione di promemoria,
