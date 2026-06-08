@@ -71,7 +71,7 @@
 					alt="RememberTo Logo" />
 			</div>
 
-			<p><strong>Ultimo aggiornamento:</strong> Maggio 2026</p>
+			<p><strong>Ultimo aggiornamento:</strong> Giugno 2026</p>
 
 			<p>
 				RememberTo è un’app dedicata alla gestione di promemoria, terapie
@@ -94,7 +94,16 @@
 				</li>
 				<li>
 					Dati tecnici: identificatori del dispositivo necessari al
-					funzionamento delle notifiche
+					funzionamento delle notifiche, dati di diagnostica, informazioni su
+					dispositivo, sistema operativo, versione dell'app, eventi di errore,
+					crash e performance
+				</li>
+				<li>
+					Dati diagnostici: errori, crash, stack trace, schermata o area
+					dell'app coinvolta, timestamp, versione dell'app, sistema operativo,
+					modello del dispositivo e altre informazioni tecniche necessarie a
+					individuare e correggere malfunzionamenti. Non inviamo
+					intenzionalmente contenuti sanitari a Sentry.
 				</li>
 			</ul>
 
@@ -111,27 +120,46 @@
 					visualizzazione di annunci pubblicitari tramite Google Mobile Ads
 				</li>
 				<li>gestione delle preferenze privacy e consenso per gli annunci</li>
+				<li>
+					monitoraggio di errori, crash e prestazioni tramite Sentry per
+					sicurezza, manutenzione e miglioramento dell'app
+				</li>
 			</ul>
 
 			<h2>⚖️ Base giuridica</h2>
 
 			<p>
-				Il trattamento dei dati si basa sul consenso esplicito dell’utente ai
-				sensi del GDPR.
+				Il trattamento dei dati si basa sul consenso esplicito dell'utente per
+				le funzionalità che richiedono dati sanitari e, per i dati tecnici
+				necessari a sicurezza, diagnostica e manutenzione dell'app,
+				sull'esecuzione del servizio e/o sul legittimo interesse del titolare,
+				nei limiti previsti dal GDPR.
 			</p>
 
 			<h2>👥 Condivisione dati</h2>
 
 			<p>
-				I dati NON vengono venduti né condivisi con terze parti. I dati possono
-				essere condivisi solo tra utenti tramite il sistema caregiver, previo
-				consenso esplicito dell’utente.
+				I dati non vengono venduti. Alcuni dati possono essere trattati da
+				fornitori tecnici necessari al funzionamento, alla sicurezza, alla
+				diagnostica, alle notifiche e alla pubblicità dell'app.
+			</p>
+
+			<p>
+				I dati possono essere condivisi solo tra utenti tramite il sistema
+				caregiver, previo consenso esplicito dell’utente.
 			</p>
 
 			<p>
 				Il caregiver può esclusivamente visualizzare i dati che l’utente decide
 				di condividere e non può modificarli o accedere ad altri dati non
 				autorizzati.
+			</p>
+
+			<p>
+				I fornitori tecnici includono, a seconda delle funzionalità usate, Expo,
+				Google Mobile Ads (AdMob), Sentry e servizi infrastrutturali. Tali
+				fornitori trattano i dati secondo le rispettive informative, termini e
+				garanzie applicabili.
 			</p>
 
 			<h2>🔐 Sicurezza</h2>
@@ -152,9 +180,10 @@
 			<p>
 				I dati principali dell’app sono trattati su server situati nell’Unione
 				Europea. Alcuni servizi tecnici di terze parti, come notifiche push,
-				pubblicità o servizi infrastrutturali, possono comportare trattamenti da
-				parte dei rispettivi fornitori secondo le loro informative privacy,
-				termini di servizio e garanzie applicabili.
+				pubblicità, diagnostica degli errori o servizi infrastrutturali, possono
+				comportare trattamenti da parte dei rispettivi fornitori, anche fuori
+				dallo Spazio Economico Europeo quando necessario, secondo le loro
+				informative privacy, termini di servizio e garanzie applicabili.
 			</p>
 
 			<h2>🔔 Servizi esterni</h2>
@@ -168,6 +197,10 @@
 				<li>
 					servizi infrastrutturali necessari al funzionamento dell’app e del
 					backend.
+				</li>
+				<li>
+					Sentry (Functional Software, Inc.) per monitoraggio di errori, crash e
+					prestazioni dell'app
 				</li>
 			</ul>
 
@@ -212,6 +245,34 @@
 			<p>
 				RememberTo non fornisce consulenza medica e non sostituisce il parere di
 				un medico o professionista sanitario.
+			</p>
+
+			<h2>🖥️ Diagnostica, crash e performance</h2>
+
+			<p>
+				RememberTo utilizza Sentry per rilevare errori, crash e problemi di
+				performance, migliorare stabilità e sicurezza dell'app e intervenire più
+				rapidamente sui malfunzionamenti.
+			</p>
+
+			<p>
+				Gli eventi diagnostici possono includere informazioni tecniche come
+				modello del dispositivo, sistema operativo, versione dell'app,
+				timestamp, stack trace, tipo di errore, area o schermata coinvolta e
+				breadcrumb tecnici utili alla ricostruzione del problema.
+			</p>
+
+			<p>
+				Sentry è configurato con sendDefaultPii: false e con filtri lato app per
+				non inviare automaticamente nome, email, ID utente, cookie, header,
+				corpo delle richieste o query string. Non sono abilitati Session Replay,
+				screenshot o invio intenzionale di contenuti sanitari.
+			</p>
+
+			<p>
+				Gli eventi diagnostici sono conservati solo per finalità tecniche,
+				sicurezza, manutenzione e assistenza, secondo le impostazioni di
+				conservazione applicabili al progetto Sentry e alle esigenze operative.
 			</p>
 
 			<h2>👤 Diritti dell’utente</h2>
