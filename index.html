@@ -1,117 +1,44 @@
-<!-- index.html -->
 <!doctype html>
-<html lang="it">
+<html lang="it" dir="ltr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<title>RememberTo - Legal</title>
-
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-				background: #f5f7fb;
-				margin: 0;
-				padding: 40px 20px;
-				color: #222;
-			}
-
-			.container {
-				max-width: 800px;
-				margin: auto;
-				background: white;
-				padding: 40px;
-				border-radius: 16px;
-				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-			}
-
-			.header {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				gap: 20px;
-			}
-
-			.header img {
-				width: 70px;
-				height: 70px;
-				object-fit: contain;
-				background: #73a7fa;
-				padding: 5px;
-				border-radius: 35px;
-			}
-
-			h1 {
-				color: #193042;
-				margin-bottom: 10px;
-			}
-
-			p {
-				line-height: 1.6;
-			}
-
-			.links {
-				margin-top: 30px;
-			}
-
-			.card {
-				display: block;
-				padding: 18px;
-				margin-bottom: 15px;
-				background: #f1f5f9;
-				border-radius: 12px;
-				text-decoration: none;
-				color: #111;
-				transition: 0.2s;
-			}
-
-			.card:hover {
-				background: #dbeafe;
-			}
-
-			footer {
-				margin-top: 40px;
-				font-size: 14px;
-				color: #666;
-			}
-		</style>
+		<link
+			rel="stylesheet"
+			href="styles.css" />
+		<script
+			src="i18n.js"
+			defer></script>
 	</head>
-	<body>
-		<div class="container">
-			<div class="header">
-				<h1>RememberTo</h1>
+	<body data-page="home">
+		<main class="container">
+			<header class="site-header">
+				<div class="header-copy">
+					<h1 id="page-title">RememberTo</h1>
+				</div>
 				<img
+					class="logo"
 					src="logo.png"
 					alt="RememberTo Logo" />
+			</header>
+
+			<div class="language-bar">
+				<label
+					id="language-label"
+					for="language-select"
+					>Lingua</label
+				>
+				<select id="language-select"></select>
 			</div>
 
-			<p>
-				Applicazione per la gestione di promemoria, terapie farmacologiche,
-				appuntamenti sanitari e diario clinico personale.
-			</p>
-
-			<div class="links">
-				<a
-					class="card"
-					href="privacy.html">
-					🔒 Privacy Policy
-				</a>
-
-				<a
-					class="card"
-					href="terms.html">
-					📄 Terms & Conditions
-				</a>
-
-				<a
-					class="card"
-					href="delete-account.html">
-					❌ Eliminazione account
-				</a>
-			</div>
-
-			<footer>© 2026 RememberTo - Gaetano Gelo</footer>
-		</div>
+			<section id="page-content"></section>
+			<noscript>
+				<p>Abilita JavaScript per visualizzare le versioni multilingua.</p>
+			</noscript>
+			<footer id="page-footer"></footer>
+		</main>
 	</body>
 </html>

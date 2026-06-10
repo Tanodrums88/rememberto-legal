@@ -1,316 +1,44 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" dir="ltr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<title>Privacy Policy - RememberTo</title>
-
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-				background: #f5f7fb;
-				margin: 0;
-				padding: 30px 20px;
-				color: #222;
-			}
-
-			.container {
-				max-width: 900px;
-				margin: auto;
-				background: white;
-				padding: 40px;
-				border-radius: 16px;
-				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-			}
-			.header {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				gap: 20px;
-			}
-
-			.header img {
-				width: 70px;
-				height: 70px;
-				object-fit: contain;
-				background: #73a7fa;
-				padding: 5px;
-				border-radius: 35px;
-			}
-
-			h1,
-			h2 {
-				color: #193042;
-			}
-
-			p,
-			li {
-				line-height: 1.7;
-			}
-
-			ul {
-				padding-left: 20px;
-			}
-
-			.back {
-				display: inline-block;
-				margin-top: 30px;
-				text-decoration: none;
-				color: #2563eb;
-			}
-		</style>
+		<link
+			rel="stylesheet"
+			href="styles.css" />
+		<script
+			src="i18n.js"
+			defer></script>
 	</head>
-	<body>
-		<div class="container">
-			<div class="header">
-				<h1>Privacy Policy – RememberTo</h1>
+	<body data-page="privacy">
+		<main class="container">
+			<header class="site-header">
+				<div class="header-copy">
+					<h1 id="page-title">Privacy Policy - RememberTo</h1>
+				</div>
 				<img
+					class="logo"
 					src="logo.png"
 					alt="RememberTo Logo" />
+			</header>
+
+			<div class="language-bar">
+				<label
+					id="language-label"
+					for="language-select"
+					>Lingua</label
+				>
+				<select id="language-select"></select>
 			</div>
 
-			<p><strong>Ultimo aggiornamento:</strong> Giugno 2026</p>
-
-			<p>
-				RememberTo è un’app dedicata alla gestione di promemoria, terapie
-				farmacologiche, appuntamenti sanitari e monitoraggio personale tramite
-				diario clinico.
-			</p>
-
-			<h2>📌 Dati raccolti</h2>
-
-			<ul>
-				<li>
-					Dati di account: nome, email, password, data di nascita, sesso,
-					nazionalità, lingua
-				</li>
-				<li>Dati opzionali: numero di telefono</li>
-				<li>
-					Dati sanitari: farmaci, terapie, promemoria, appuntamenti sanitari,
-					diario clinico personale, parametri vitali, sintomi, effetti
-					collaterali, dati glicemici e note sanitarie
-				</li>
-				<li>
-					Dati tecnici: identificatori del dispositivo necessari al
-					funzionamento delle notifiche, dati di diagnostica, informazioni su
-					dispositivo, sistema operativo, versione dell'app, eventi di errore,
-					crash e performance
-				</li>
-				<li>
-					Dati diagnostici: errori, crash, stack trace, schermata o area
-					dell'app coinvolta, timestamp, versione dell'app, sistema operativo,
-					modello del dispositivo e altre informazioni tecniche necessarie a
-					individuare e correggere malfunzionamenti. Non inviamo
-					intenzionalmente contenuti sanitari a Sentry.
-				</li>
-			</ul>
-
-			<h2>🎯 Finalità del trattamento</h2>
-
-			<ul>
-				<li>funzionamento dell’app</li>
-				<li>gestione promemoria e terapie</li>
-				<li>notifiche push</li>
-				<li>monitoraggio sanitario personale tramite diario clinico</li>
-				<li>esportazione PDF dei dati sanitari</li>
-				<li>gestione caregiver e condivisione dati tra utenti autorizzati</li>
-				<li>
-					visualizzazione di annunci pubblicitari tramite Google Mobile Ads
-				</li>
-				<li>gestione delle preferenze privacy e consenso per gli annunci</li>
-				<li>
-					monitoraggio di errori, crash e prestazioni tramite Sentry per
-					sicurezza, manutenzione e miglioramento dell'app
-				</li>
-			</ul>
-
-			<h2>⚖️ Base giuridica</h2>
-
-			<p>
-				Il trattamento dei dati si basa sul consenso esplicito dell'utente per
-				le funzionalità che richiedono dati sanitari e, per i dati tecnici
-				necessari a sicurezza, diagnostica e manutenzione dell'app,
-				sull'esecuzione del servizio e/o sul legittimo interesse del titolare,
-				nei limiti previsti dal GDPR.
-			</p>
-
-			<h2>👥 Condivisione dati</h2>
-
-			<p>
-				I dati non vengono venduti. Alcuni dati possono essere trattati da
-				fornitori tecnici necessari al funzionamento, alla sicurezza, alla
-				diagnostica, alle notifiche e alla pubblicità dell'app.
-			</p>
-
-			<p>
-				I dati possono essere condivisi solo tra utenti tramite il sistema
-				caregiver, previo consenso esplicito dell’utente.
-			</p>
-
-			<p>
-				Il caregiver può esclusivamente visualizzare i dati che l’utente decide
-				di condividere e non può modificarli o accedere ad altri dati non
-				autorizzati.
-			</p>
-
-			<p>
-				I fornitori tecnici includono, a seconda delle funzionalità usate, Expo,
-				Google Mobile Ads (AdMob), Sentry e servizi infrastrutturali. Tali
-				fornitori trattano i dati secondo le rispettive informative, termini e
-				garanzie applicabili.
-			</p>
-
-			<h2>🔐 Sicurezza</h2>
-
-			<p>
-				I dati sono salvati su server AWS in Germania (eu-central-1) e protetti
-				tramite misure tecniche e organizzative adeguate, inclusa la
-				crittografia dei dati ove applicabile.
-			</p>
-
-			<p>
-				Le comunicazioni tra l’app RememberTo e il server avvengono tramite
-				connessione sicura HTTPS.
-			</p>
-
-			<h2>🌍 Trasferimento dati</h2>
-
-			<p>
-				I dati principali dell’app sono trattati su server situati nell’Unione
-				Europea. Alcuni servizi tecnici di terze parti, come notifiche push,
-				pubblicità, diagnostica degli errori o servizi infrastrutturali, possono
-				comportare trattamenti da parte dei rispettivi fornitori, anche fuori
-				dallo Spazio Economico Europeo quando necessario, secondo le loro
-				informative privacy, termini di servizio e garanzie applicabili.
-			</p>
-
-			<h2>🔔 Servizi esterni</h2>
-
-			<ul>
-				<li>Expo Push Notifications per l’invio delle notifiche push;</li>
-				<li>
-					Google Mobile Ads (AdMob) per la visualizzazione di annunci
-					pubblicitari;
-				</li>
-				<li>
-					servizi infrastrutturali necessari al funzionamento dell’app e del
-					backend.
-				</li>
-				<li>
-					Sentry (Functional Software, Inc.) per monitoraggio di errori, crash e
-					prestazioni dell'app
-				</li>
-			</ul>
-
-			<h2>📢 Pubblicità e consenso annunci</h2>
-
-			<p>
-				L’app può mostrare annunci pubblicitari tramite Google Mobile Ads
-				(AdMob). Per il funzionamento degli annunci possono essere trattati dati
-				tecnici, identificatori del dispositivo o identificatori pubblicitari,
-				secondo le impostazioni del dispositivo, le preferenze espresse
-				dall’utente e le regole applicabili.
-			</p>
-
-			<p>
-				Gli annunci possono essere personalizzati o non personalizzati in base
-				alle preferenze espresse dall’utente. Per gli utenti nello Spazio
-				Economico Europeo, Regno Unito e Svizzera, RememberTo utilizza i
-				meccanismi di consenso previsti da Google, inclusa la piattaforma User
-				Messaging Platform (UMP), per raccogliere o aggiornare le preferenze
-				relative agli annunci.
-			</p>
-
-			<p>
-				L’utente può modificare le preferenze relative agli annunci tramite le
-				impostazioni disponibili nell’app, quando previste.
-			</p>
-
-			<h2>❌ Conservazione dei dati</h2>
-
-			<p>
-				I dati vengono conservati per tutta la durata dell’account e cancellati
-				alla sua eliminazione.
-			</p>
-
-			<p>
-				L’utente può richiedere la cancellazione definitiva dell’account e dei
-				dati direttamente dall’app oppure contattando rememberto.info@gmail.com
-			</p>
-
-			<h2>🧑‍⚕️ Disclaimer medico</h2>
-
-			<p>
-				RememberTo non fornisce consulenza medica e non sostituisce il parere di
-				un medico o professionista sanitario.
-			</p>
-
-			<h2>🖥️ Diagnostica, crash e performance</h2>
-
-			<p>
-				RememberTo utilizza Sentry per rilevare errori, crash e problemi di
-				performance, migliorare stabilità e sicurezza dell'app e intervenire più
-				rapidamente sui malfunzionamenti.
-			</p>
-
-			<p>
-				Gli eventi diagnostici possono includere informazioni tecniche come
-				modello del dispositivo, sistema operativo, versione dell'app,
-				timestamp, stack trace, tipo di errore, area o schermata coinvolta e
-				breadcrumb tecnici utili alla ricostruzione del problema.
-			</p>
-
-			<p>
-				Sentry è configurato con sendDefaultPii: false e con filtri lato app per
-				non inviare automaticamente nome, email, ID utente, cookie, header,
-				corpo delle richieste o query string. Non sono abilitati Session Replay,
-				screenshot o invio intenzionale di contenuti sanitari.
-			</p>
-
-			<p>
-				Gli eventi diagnostici sono conservati solo per finalità tecniche,
-				sicurezza, manutenzione e assistenza, secondo le impostazioni di
-				conservazione applicabili al progetto Sentry e alle esigenze operative.
-			</p>
-
-			<h2>👤 Diritti dell’utente</h2>
-
-			<ul>
-				<li>accedere ai propri dati</li>
-				<li>modificarli</li>
-				<li>cancellarli</li>
-				<li>revocare il consenso</li>
-				<li>opporsi al trattamento</li>
-				<li>richiedere la limitazione del trattamento</li>
-				<li>richiedere la portabilità dei dati</li>
-			</ul>
-
-			<h2>🔞 Età minima</h2>
-
-			<p>L’app è destinata a utenti di età pari o superiore a 16 anni.</p>
-
-			<h2>👤 Titolare del trattamento</h2>
-
-			<p>
-				Gaetano Gelo<br />
-				Italia<br />
-				Email: rememberto.info@gmail.com
-			</p>
-
-			<h2>🔄 Modifiche</h2>
-
-			<p>
-				La presente informativa può essere aggiornata nel tempo. Gli utenti
-				saranno informati in caso di modifiche rilevanti.
-			</p>
-
-			<a
-				class="back"
-				href="index.html"
-				>← Torna alla home</a
-			>
-		</div>
+			<section id="page-content"></section>
+			<noscript>
+				<p>Abilita JavaScript per visualizzare le versioni multilingua.</p>
+			</noscript>
+			<footer id="page-footer"></footer>
+		</main>
 	</body>
 </html>

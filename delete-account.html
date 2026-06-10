@@ -1,168 +1,44 @@
 <!doctype html>
-<html lang="it">
+<html lang="it" dir="ltr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
 		<title>Eliminazione Account - RememberTo</title>
-
-		<style>
-			body {
-				font-family: Arial, sans-serif;
-				background: #f5f7fb;
-				margin: 0;
-				padding: 30px 20px;
-				color: #222;
-			}
-
-			.container {
-				max-width: 900px;
-				margin: auto;
-				background: white;
-				padding: 40px;
-				border-radius: 16px;
-				box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-			}
-			.header {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				gap: 20px;
-			}
-
-			.header img {
-				width: 70px;
-				height: 70px;
-				object-fit: contain;
-				background: #73a7fa;
-				padding: 5px;
-				border-radius: 35px;
-			}
-			h1,
-			h2 {
-				color: #193042;
-			}
-
-			p,
-			li {
-				line-height: 1.7;
-			}
-
-			ul {
-				padding-left: 20px;
-			}
-
-			.back {
-				display: inline-block;
-				margin-top: 30px;
-				text-decoration: none;
-				color: #2563eb;
-			}
-		</style>
+		<link
+			rel="stylesheet"
+			href="styles.css" />
+		<script
+			src="i18n.js"
+			defer></script>
 	</head>
-	<body>
-		<div class="container">
-			<div class="header">
-				<h1>Eliminazione Account – RememberTo</h1>
+	<body data-page="delete">
+		<main class="container">
+			<header class="site-header">
+				<div class="header-copy">
+					<h1 id="page-title">Eliminazione Account - RememberTo</h1>
+				</div>
 				<img
+					class="logo"
 					src="logo.png"
 					alt="RememberTo Logo" />
+			</header>
+
+			<div class="language-bar">
+				<label
+					id="language-label"
+					for="language-select"
+					>Lingua</label
+				>
+				<select id="language-select"></select>
 			</div>
 
-			<p><strong>Ultimo aggiornamento:</strong> Giugno 2026</p>
-
-			<p>
-				In questa pagina sono indicate le modalità con cui un utente può
-				eliminare il proprio account RememberTo e i dati associati.
-			</p>
-			<p>
-				Questa pagina è fornita come risorsa web pubblica per le richieste di
-				eliminazione dell’account e dei dati associati, anche ai fini dei
-				requisiti previsti da Google Play.
-			</p>
-			<h2>Come eliminare l’account</h2>
-			<p>
-				L’utente può eliminare autonomamente il proprio account direttamente
-				dall’app RememberTo seguendo questo percorso:
-			</p>
-			<p><strong>Impostazioni → Eliminazione Account</strong></p>
-
-			<h2>Conferma dell’eliminazione</h2>
-
-			<p>
-				Per evitare eliminazioni accidentali, RememberTo richiede una conferma
-				esplicita prima di procedere con l’eliminazione definitiva dell’account.
-			</p>
-
-			<p>
-				L’utente deve inserire il testo di conferma richiesto dall’app. Solo
-				dopo questa conferma, l’eliminazione dell’account e dei dati associati
-				viene eseguita automaticamente.
-			</p>
-
-			<h2>Tempi di eliminazione</h2>
-			<p>
-				L’eliminazione dell’account è istantanea dopo la conferma dell’utente.
-			</p>
-			<h2>Dati eliminati</h2>
-			<p>
-				Con l’eliminazione dell’account vengono eliminati tutti i dati associati
-				all’ID dell’utente che richiede l’eliminazione.
-			</p>
-			<p>I dati eliminati possono includere, a titolo esemplificativo:</p>
-			<ul>
-				<li>dati dell’account utente;</li>
-				<li>dati del profilo;</li>
-				<li>farmaci, terapie e promemoria;</li>
-				<li>appuntamenti sanitari;</li>
-				<li>dati inseriti nel diario clinico personale;</li>
-				<li>dati relativi ai caregiver collegati all’account;</li>
-				<li>token utilizzati per l’invio delle notifiche push;</li>
-				<li>altri dati associati all’ID utente all’interno del servizio.</li>
-			</ul>
-			<h2>Dati conservati</h2>
-			<p>
-				RememberTo non conserva dati associati all’account dopo l’eliminazione.
-			</p>
-			<h2>PDF esportati</h2>
-			<p>
-				L’app può consentire l’esportazione dei dati sanitari in formato PDF.
-				Eventuali documenti PDF già esportati, salvati o condivisi dall’utente
-				non possono essere eliminati dall’app, poiché si trovano fuori dal
-				controllo di RememberTo.
-			</p>
-			<h2>Caregiver</h2>
-			<p>
-				In caso di eliminazione dell’account, vengono eliminati anche i dati e i
-				collegamenti associati alla condivisione con eventuali caregiver,
-				limitatamente ai dati associati all’ID dell’utente eliminato.
-			</p>
-			<h2>Assistenza e richiesta via email</h2>
-
-			<p>
-				Se l’utente non riesce ad accedere all’app o non può completare la
-				procedura di eliminazione dall’interno di RememberTo, può contattare
-				l’assistenza all’indirizzo email indicato di seguito.
-			</p>
-
-			<p>
-				La richiesta deve essere inviata dall’indirizzo email associato
-				all’account RememberTo, oppure deve contenere informazioni sufficienti
-				per consentire la verifica dell’identità dell’utente prima di procedere
-				con l’eliminazione.
-			</p>
-			<h2>📧 Contatti</h2>
-			<p>
-				Gaetano Gelo<br />
-				Italia<br />
-				Email: rememberto.info@gmail.com
-			</p>
-			<a
-				class="back"
-				href="index.html"
-				>← Torna alla home</a
-			>
-		</div>
+			<section id="page-content"></section>
+			<noscript>
+				<p>Abilita JavaScript per visualizzare le versioni multilingua.</p>
+			</noscript>
+			<footer id="page-footer"></footer>
+		</main>
 	</body>
 </html>
